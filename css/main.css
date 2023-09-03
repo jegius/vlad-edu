@@ -1,206 +1,103 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-/* josefin-sans-regular - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/josefin-sans-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* josefin-sans-700 - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/josefin-sans-v26-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* inter-regular - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/inter-v12-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
+/*@import url('https://fonts.cdnfonts.com/css/maria-2');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
+  :root {
+    --black: #111503FF;
+    --white: #FDFDFEFF;
+    --light-gray: #F8F8F9FF;
+    --gray: #efeff0;
+    --red-orange: #F03803FF;
+    --beige: #F3E0D2FF;
+    --back-color: #711010;
+    --dark-blue: #232d5a
+}
 
 body {
-    background-color: #000000;
-    background-image: url("https://www.clubkingswood.co.uk/images/gym/gym-new-5.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-#allhead {
-    display: flex;
-    justify-content: center;
-    color: #000000;
-    font-family: "Josefin Sans", serif;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-}
-
-#lefthead {
-    background: rgba(255, 255, 255, 0.8);
-    height: 706px;
-    width: 720px;
-}
-
-#righthead {
-    background: rgba(255, 255, 255, 0.8);
-    height: 706px;
-    width: 720px;
-}
-.logo{
-    /*по идее это не шрифт, а сплайн. Может его картинкой бахнуть?*/
-    display: flex;
-    font-family: "Josefin Sans",serif;
-    font-weight: 700;
-    font-size: 1.8rem;;
-    padding-top: 43px;
-    padding-left: 145px;
-}
-.logo p{
-    padding-top: 4px;
-}
-
-.vert_p {
-    text-align: left;
-    padding-top: 1em;
-    position: relative;
-    transform: rotate(-0.25turn);
-    margin-top: 100px;
-    margin-left: -50px;
-    width: 14em;
-    height: 2em;
-    background: aqua;
-    font-family: "Josefin Sans", serif;
-    font-weight: 400; /* надо скачать 500*/
-    font-size: 1rem;
-
-}
-
-.vert_s {
-    background: coral;
-    width: 14em;
-    height: 2em;
-    margin-top: 25%;
-    font-family: "Josefin Sans", serif;
-    font-weight: 400; /* надо скачать 500*/
-    font-size: 1rem;
-}
-
-.find {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.6);
-    width: 176px;
-    height: 52px;
-    margin: 120px 0 0 145px;
-    padding: 26px 0 0 44px;
-    font-family: "Josefin Sans", serif;
-    font-weight: 400; /* надо скачать 500*/
-    font-size: 1rem;
-
-}
-
-.we_bring {
-    display: block;
-    position: relative;
-    margin-top: -200px;
-}
-.we_bring h1,h2 {
-    margin-left: 145px;
-    font-family: "Josefin Sans", serif;
-    font-weight: 700;
-    font-size: 4.875rem;
-}
-.we_bring h2 {
-    color: #f03803;
-    margin-top: auto;
-}
-.we_bring p{
-    display: block;
-    margin: auto 0 0 145px;
-    font-family: "Josefin Sans", serif;
-    font-weight: 400; /* надо скачать 500*/
-    font-size: 1rem;
-    line-height: 1.775rem;
-}
-
-.right_pic-block {
-
-}
-
-#beige_stripe {
-    display: flex;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: var(--black);
     }
 
-.links {
-    display: block;
-    background: rgba(255, 218, 185, 0.95);
-    height: 230px;
-    width: 1440px;
+input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none; /* убирает серую подсветку при активации в некоторых браузерах */
+    -webkit-appearance: none; /* убирает стили браузера в Chrome и Safari */
+    -moz-appearance: none; /* убирает стили браузера в Firefox */
+    appearance: none; /* убирает стили браузера для остальных */
 }
 
-.links_pic {
+a {
+    text-decoration: none; /* убирает подчеркивание */
+    color: var(--dark-blue);
+}
+
+.header {
     display: flex;
-    margin-left: -60px;
-    padding: 88px 120px;
+    min-height: 37.55rem;
+    justify-content: space-between;
+    background: var(--white) url("../img/smiled_nerdman.png") no-repeat;
+    background-size: 40rem;
+    background-position-x: 40rem;
+}
+
+.header__left ul {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 0 0 3rem;
     justify-content: space-around;
+    font-size: 0.75rem;
 }
 
-
-#build_social {
-    display: flex;
-    justify-content: center;
-}
-.bild_img {
-    display: block;
-    background: rgba(255, 255, 255, 0.8);
-    height: 836px;
-    width: 720px;
-}
-.img_pos {
-    margin-left: 12%;
-    margin-top: 22%;
+.header__left-spine {
+    margin-top:9rem;
+    list-style: none;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
 }
 
-.bild_text {
-    display: block;
-    background: rgba(255, 255, 255, 0.8);
-    height: 836px;
-    width: 720px;
+.header__left-text {
+    justify-content: space-between;
+    position: relative;
+    margin: -32rem 0 0 9rem;
 }
-.bild_text h1 {
-    margin: 100px 0 0 100px;
-    color: #000000;
-    font-family: "Josefin Sans", serif;
-    text-rendering: auto;
-    font-size: 3rem;
+.header__left-text h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 5rem;
+    font-size: 4.875rem;
     font-weight: 700;
-    line-height: 4.2rem;
-    -webkit-font-smoothing: antialiased;
-    }
-.bild_text p {
-    color: #000000;
-    font-family: "Josefin Sans", serif;
-    text-rendering: auto;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.6rem;
-    -webkit-font-smoothing: antialiased;
+}
+.header__left-text p {
+    margin-top: -2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    max-width: 22rem;
+    line-height: 1.4rem;
+}
+.header__left-text span {
+    color: var(--red-orange);
+}
+.header__left-text h2 {
+    max-width: 15rem;
+    text-align: right;
+    padding-right: 1rem;
+    line-height: 4rem;
+    background: var(--gray);
+    margin-top: 4rem;
 }
 
-#gray_stripe {
-    display: flex;
-    background: rgba(200, 200, 200, 0.9);
-    height: 480px;
-    width: 1440px;
+.stripe{
+    margin-top: -1rem;
+    background-color: var(--beige);
+    background-size: 40rem;
+    max-width: 80rem;
+    color: var(--dark-blue);
+    }
+
+.stripe__link {
+    list-style: none;
 }
