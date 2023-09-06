@@ -55,6 +55,17 @@ a {
     background-position-x: 43.875rem;
 }
 
+.menu-button {
+    position: fixed;
+    background: url("../img/Ellipse 1.png") no-repeat;
+    margin-left: 81.85rem;
+    box-sizing: border-box;
+    padding: 3rem 3rem 3rem 3.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--gray);
+}
+
 .header__spine {
     display: block;
     margin: 10rem 6.5rem 0 2rem;
@@ -82,7 +93,7 @@ a {
     max-width: 29rem;
 }
 
-.header__button {
+.header__find-button {
     font-size: 1rem;
     font-weight: 500;
     background: var(--gray);
@@ -95,10 +106,13 @@ a {
 .beige-stripe {
     background-color: var(--beige);
     background-size: 40rem;
-    max-width: 90rem;
     color: var(--dark-blue);
 }
 
 .beige-stripe__link {
     list-style: none;
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left: 1rem;
+    margin: 6rem 2rem;
 }
