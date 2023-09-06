@@ -12,6 +12,7 @@
     --back-color: #711010;
     --dark-blue: #232d5a;
     --transparent-gray: #939393;
+    --inter: 'Inter', sans-serif;
 }
 
 body {
@@ -43,8 +44,9 @@ a {
 }
 
 .white-page {
-    position: fixed;
+    position: absolute;
     min-width: 90rem;
+    /*min-height: 485rem;*/
     background-color: var(--white);
     margin-left: calc(50vw - 45rem);
 }
@@ -61,7 +63,7 @@ a {
 .menu-button {
     position: fixed;
     background: url("../img/Ellipse 1.png") no-repeat;
-    margin-left: 81.85rem;
+    margin-left: 81.9rem;
     box-sizing: border-box;
     padding: 3rem 3rem 3rem 3.5rem;
     font-size: 1.2rem;
@@ -157,12 +159,52 @@ a {
 .box-paragraph {
     color: var(--transparent-gray);
     max-width: 34.1875rem;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--inter);
     font-size: 1rem;
-    font-style: normal;
     font-weight: 400;
     line-height: 1.6rem;
 }
 
-
 /*GRAY-STRIPE*/
+
+.gray-stripe {
+    background: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    padding:6.63rem 2.5rem 6.62rem 0;
+}
+
+.gray-stripe__column {
+    max-width: 23.8rem;
+    box-sizing: border-box;
+    padding-left: 2.6rem;
+    border-left: 0.3rem solid var(--red-orange);
+    margin-left: 3.25rem;
+}
+
+.column-name {
+    font-family: var(--inter);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+}
+
+.column-title {
+    font-size: 2.125rem;
+    font-weight: 700;
+    line-height: 3.4rem;
+}
+
+.column-paragraph {
+    font-family: var(--inter);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+}
+
+.column-button {
+    font-family: var(--inter);
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+}
