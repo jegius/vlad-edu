@@ -11,6 +11,7 @@
     --beige: #F3E0D2FF;
     --back-color: #711010;
     --dark-blue: #232d5a;
+    --transparent-gray: #939393;
 }
 
 body {
@@ -47,6 +48,8 @@ a {
     background-color: var(--white);
     margin-left: calc(50vw - 45rem);
 }
+
+/*HEADER*/
 
 .header {
     display: flex;
@@ -103,16 +106,63 @@ a {
     margin-top: 4.2rem;
 }
 
+/*BEIGE-STRIPE*/
+
 .beige-stripe {
     background-color: var(--beige);
-    background-size: 40rem;
-    color: var(--dark-blue);
 }
 
-.beige-stripe__link {
-    list-style: none;
-    display: inline-block;
-    box-sizing: border-box;
-    padding-left: 1rem;
-    margin: 6rem 2rem;
+.beige-stripe__links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 6rem 9rem 6rem 7rem;
 }
+
+/*BLOCK-1*/
+
+.block-1 {
+    background: url("../img/pazzle_duet.png") no-repeat;
+    background-position: 8rem 10rem;
+    min-height: 52rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.block-1__text {
+    margin-left: 48rem;
+    margin-top: 5.5rem;
+}
+
+.block-1__list {
+    list-style-image: url("../img/arrows.png");
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+    min-height: 7.6rem;
+    margin-top: 2rem;
+}
+
+.box-title {
+    max-width: 28.8rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4.2rem;
+}
+
+.box-paragraph {
+    color: var(--transparent-gray);
+    max-width: 34.1875rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6rem;
+}
+
+
+/*GRAY-STRIPE*/
