@@ -3,16 +3,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
 :root {
+    --inter: 'Inter', sans-serif;
+
     --black: #111503FF;
     --white: #FDFDFEFF;
-    --light-gray: #F8F8F9FF;
-    --gray: #efeff0;
+    --gray: #ebebeb;
+    --light-gray: #f6f6f6;
+    --transparent-gray: #939393;
     --red-orange: #F03803FF;
     --beige: #F3E0D2FF;
     --back-color: #711010;
     --dark-blue: #232d5a;
-    --transparent-gray: #939393;
-    --inter: 'Inter', sans-serif;
+
+    --header-logo: url("/img/logo.png");
+    --header-background: url("/img/header-background.png");
+    --header--menu-button: url("/img/header-menu-button.png");
+    --beige-stripe-1-stripe: url("/img/stripe.png");
+    --beige-stripe-1-spotyfy: url("/img/spotify.png");
+    --beige-stripe-1-microsoft: url("/img/microsoft.png");
+    --beige-stripe-1-dropbox: url("/img/dropbox.png");
+    --beige-stripe-1-behance: url("/img/behance.png");
+    --block-1-background: url("/img/block-1-background.png");
+    --block-1-list: url("/img/arrows.png");
+    --block-2-image-1: url("/img/block-2-image-1.png");
+    --block-2-image-2: url("/img/block-2-image-2.png");
 }
 
 body {
@@ -56,13 +70,13 @@ a {
 .header {
     display: flex;
     min-height: 44.125rem;
-    background: var(--white) url("../img/smiled_nerdman.png") no-repeat;
+    background: var(--white) var(--header-background) no-repeat;
     background-position-x: 43.875rem;
 }
 
 .menu-button {
     position: fixed;
-    background: url("../img/Ellipse 1.png") no-repeat;
+    background: var(--header--menu-button) no-repeat;
     margin-left: 81.9rem;
     box-sizing: border-box;
     padding: 3rem 3rem 3rem 3.5rem;
@@ -81,6 +95,12 @@ a {
 
 .header__text-block {
     margin-top: 2.8rem;
+}
+
+.header__text-block::before {
+    content: var(--header-logo);
+    max-height: 1.8rem;
+    max-width: 10rem;
 }
 
 .header__title {
@@ -110,7 +130,7 @@ a {
 
 /*BEIGE-STRIPE*/
 
-.beige-stripe {
+.beige-background {
     background-color: var(--beige);
 }
 
@@ -118,13 +138,37 @@ a {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding: 6rem 9rem 6rem 7rem;
+    /*padding: 6rem 9rem 6rem 7rem;*/
+    padding: 6rem 0;
+    margin: 0 8.8rem;
+}
+
+.beige-stripe__links-1 {
+    content: var(--beige-stripe-1-stripe);
+}
+
+.beige-stripe__links-2 {
+    content: var(--beige-stripe-1-spotyfy);
+}
+
+.beige-stripe__links-3 {
+    content: var(--beige-stripe-1-microsoft);
+    margin-right: 1.5rem;
+}
+
+.beige-stripe__links-4 {
+    content: var(--beige-stripe-1-dropbox);
+    margin-right: 2rem;
+}
+
+.beige-stripe__links-5 {
+    content: var(--beige-stripe-1-behance);
 }
 
 /*BLOCK-1*/
 
 .block-1 {
-    background: url("../img/pazzle_duet.png") no-repeat;
+    background: var(--block-1-background) no-repeat;
     background-position: 8rem 10rem;
     min-height: 52rem;
     display: flex;
@@ -133,12 +177,11 @@ a {
 }
 
 .block-1__text {
-    margin-left: 48rem;
-    margin-top: 5.5rem;
+    margin: 5.5rem 0 0 48rem;
 }
 
 .block-1__list {
-    list-style-image: url("../img/arrows.png");
+    list-style-image: var(--block-1-list);
     font-size: 1rem;
     font-weight: 400;
     display: flex;
@@ -165,13 +208,23 @@ a {
     line-height: 1.6rem;
 }
 
+.box-link {
+    background: var(--red-orange);
+    color: var(--white);
+    display: inline-flex;
+    padding: 1rem 1.875rem;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border-radius: 0.3125rem;
+}
+
 /*GRAY-STRIPE*/
 
 .gray-stripe {
     background: var(--light-gray);
     display: flex;
     justify-content: center;
-    padding:6.63rem 2.5rem 6.62rem 0;
+    padding: 6.63rem 2.5rem 6.62rem 0;
 }
 
 .gray-stripe__column {
@@ -207,4 +260,61 @@ a {
     font-size: 0.75rem;
     font-weight: 500;
     line-height: 1.2rem;
+}
+
+.block-2 {
+    min-height: 38.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-2__images {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    max-width: 23.6875rem;
+    max-height: 23.1875rem;
+    margin: 8.75rem 0 0 0;
+}
+
+.block-2_image-1 {
+    content: var(--block-2-image-1);
+    padding-right: 2rem;
+}
+
+.block-2_image-2 {
+    content: var(--block-2-image-2);
+}
+
+.block-2__text {
+    margin: 8.75rem 0 0 9.3rem;
+}
+
+.block-2__stripe {
+    min-height: 18.75rem;
+    display: flex;
+    padding: 0 9.25rem;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.beige-stripe__text {
+    max-width: 24.4375rem;
+}
+
+.beige-stripe__title {
+    margin-top: 5.25rem;
+    font-size: 2.5rem;
+}
+
+.beige-stripe__paragraph {
+    font-family: var(--inter);
+    font-size: 1rem;
+    line-height:1.96rem;
+}
+
+.block-2__stripe-link {
+    font-size: 1.5rem;
+    margin-top: 7.375rem;
 }
