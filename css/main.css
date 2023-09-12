@@ -27,6 +27,20 @@
     --block-1-list: url("/img/arrows.png");
     --block-2-image-1: url("/img/block-2-image-1.png");
     --block-2-image-2: url("/img/block-2-image-2.png");
+    --article-1: url("/img/article-1.png");
+    --article-2: url("/img/article-2.png");
+    --article-3: url("/img/article-3.png");
+    --article-4: url("/img/article-4.png");
+    --team-man: url("/img/team-man.png");
+    --team-nigga: url("/img/team-nigga.png");
+    --team-woman: url("/img/team-woman.png");
+    --team-link-1: url("/img/team-link-1.png");
+    --team-link-2: url("/img/team-link-2.png");
+    --team-link-3: url("/img/team-link-3.png");
+    --patients: url("/img/patients.png");
+    --news-1: url("/img/news-1.png");
+    --news-2: url("/img/news-2.png");
+    --news-3: url("/img/news-3.png");
 }
 
 body {
@@ -57,12 +71,16 @@ a {
     color: var(--red-orange);
 }
 
+.beige-background {
+    background-color: var(--beige);
+}
+
 .white-page {
-    position: absolute;
-    min-width: 90rem;
+    /*position: absolute;*/
+    max-width: 90rem;
     /*min-height: 485rem;*/
     background-color: var(--white);
-    margin-left: calc(50vw - 45rem);
+    margin: auto;
 }
 
 /*HEADER*/
@@ -128,11 +146,7 @@ a {
     margin-top: 4.2rem;
 }
 
-/*BEIGE-STRIPE*/
-
-.beige-background {
-    background-color: var(--beige);
-}
+/*LINKS-STRIPE*/
 
 .beige-stripe__links {
     display: flex;
@@ -192,8 +206,15 @@ a {
     margin-top: 2rem;
 }
 
-.box-title {
+.block-2__text-title {
     max-width: 28.8rem;
+}
+
+.block-2__text-paragraph {
+    max-width: 34.1875rem;
+}
+
+.box-title {
     font-size: 3rem;
     font-weight: 700;
     line-height: 4.2rem;
@@ -201,7 +222,6 @@ a {
 
 .box-paragraph {
     color: var(--transparent-gray);
-    max-width: 34.1875rem;
     font-family: var(--inter);
     font-size: 1rem;
     font-weight: 400;
@@ -262,6 +282,8 @@ a {
     line-height: 1.2rem;
 }
 
+/*BLOCK-2*/
+
 .block-2 {
     min-height: 38.5rem;
     display: flex;
@@ -290,6 +312,8 @@ a {
     margin: 8.75rem 0 0 9.3rem;
 }
 
+/*BLOCK-2-STRIPE*/
+
 .block-2__stripe {
     min-height: 18.75rem;
     display: flex;
@@ -311,10 +335,212 @@ a {
 .beige-stripe__paragraph {
     font-family: var(--inter);
     font-size: 1rem;
-    line-height:1.96rem;
+    line-height: 1.96rem;
 }
 
 .block-2__stripe-link {
     font-size: 1.5rem;
     margin-top: 7.375rem;
+}
+
+/*VIDEO*/
+
+.video__content {
+    min-width: 90rem;
+}
+
+.video__description {
+    min-height: 34.3rem;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 4.5rem 12.5rem;
+}
+
+.video__description-text {
+    max-width: 35rem;
+}
+
+.video__list {
+    list-style: none;
+    font-family: var(--inter);
+    font-size: 1.25rem;
+    line-height: 2.45rem;
+    padding-top: 2rem;
+}
+
+/*ARTICLES*/
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-category {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.4175rem;
+    letter-spacing: 0.14rem;
+    box-sizing: border-box;
+}
+
+.article-title {
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: 1.625rem;
+    margin-top: 1rem;
+}
+
+.article-1 {
+
+}
+
+.article-1__link {
+    content: var(--article-1);
+}
+
+.article-2__link {
+    content: var(--article-2);
+    padding-top: 2.25rem;
+}
+
+.article-3__link {
+    content: var(--article-3);
+    padding-top: 4.5rem;
+}
+
+.article-4__link {
+    content: var(--article-4);
+    padding-top: 3.375rem;
+}
+
+
+/*COMMUNITY*/
+
+.community {
+}
+
+.community__team {
+}
+
+.community__team-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 9.5rem;
+}
+
+.team-text-title {
+    max-width: 28.4375rem;
+    font-size: 3rem;
+    line-height: 4.2rem;
+}
+
+.team-text-paragraph {
+    max-width: 31.6875rem;
+    padding-top: 4.5rem;
+}
+
+.community__team-photos {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 9.5rem;
+}
+
+.team-photos-man {
+    content: var(--team-man);
+}
+
+.team-photos-nigga {
+    content: var(--team-nigga);
+}
+
+.team-photos-woman {
+    content: var(--team-woman);
+}
+
+.team-info__text-name {
+    font-family: var(--inter);
+    color: var(--dark-blue);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.team-info__text-job {
+    font-family: var(--inter);
+    color: var(--transparent-gray);
+    font-size: 0.875rem;
+}
+
+.community__team-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10.2rem 0 9.5rem;
+}
+
+.community__team-info__person {
+    display: flex;
+}
+
+.community__team-info__link {
+    display: flex;
+    min-width: 7rem;
+    justify-content: space-between;
+    padding: 2.25rem 0 0 7.1rem;
+}
+
+.team-info__link-1 {
+    content: var(--team-link-1);
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+}
+
+.team-info__link-2 {
+    content: var(--team-link-2);
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+}
+
+.team-info__link-3 {
+    content: var(--team-link-3);
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+}
+
+/*FOOTER*/
+.footer {
+    background: var(--black);
+    color: var(--white);
+    border-left: var(--white) 0.1rem solid;
+    border-right: var(--white) 0.1rem solid;
+}
+
+.footer__column {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 7rem 6rem 7rem;
+}
+
+.footer__link {
+    color: var(--white);
+    font-family: var(--inter);
+    list-style: none;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    opacity: 0.6;
+}
+
+.footer__links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__spine {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4.5rem 4rem 4.5rem;
+}
+
+.footer__spine-privacy {
+    padding-right: 4rem;
 }
