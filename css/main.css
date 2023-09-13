@@ -619,7 +619,7 @@ a {
 
 .news__column-preview {
     font-family: var(--inter);
-    font-size: 16px;
+    font-size: 16rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5rem;
