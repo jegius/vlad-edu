@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+/*КОРРЕКТИВЫ
+
+Добавить анимации
+Размер шрифтов в пикселях
+Если одно смещение то запись смещение-сторона
+
+*/
+
 :root {
     --inter: 'Inter', sans-serif;
 
@@ -14,32 +22,32 @@
     --back-color: #711010;
     --dark-blue: #232d5a;
 
-    --header-logo: url("/img/logo.png");
-    --header-background: url("/img/header-background.png");
-    --header--menu-button: url("/img/header-menu-button.png");
-    --beige-stripe-1-stripe: url("/img/stripe.png");
-    --beige-stripe-1-spotyfy: url("/img/spotify.png");
-    --beige-stripe-1-microsoft: url("/img/microsoft.png");
-    --beige-stripe-1-dropbox: url("/img/dropbox.png");
-    --beige-stripe-1-behance: url("/img/behance.png");
-    --block-1-background: url("/img/block-1-background.png");
-    --block-1-list: url("/img/arrows.png");
-    --block-2-image-1: url("/img/block-2-image-1.png");
-    --block-2-image-2: url("/img/block-2-image-2.png");
-    --article-1: url("/img/article-1.png");
-    --article-2: url("/img/article-2.png");
-    --article-3: url("/img/article-3.png");
-    --article-4: url("/img/article-4.png");
-    --team-man: url("/img/team-man.png");
-    --team-nigga: url("/img/team-nigga.png");
-    --team-woman: url("/img/team-woman.png");
-    --team-link-1: url("/img/team-link-1.png");
-    --team-link-2: url("/img/team-link-2.png");
-    --team-link-3: url("/img/team-link-3.png");
-    --patients: url("/img/patients.png");
-    --news-1: url("/img/news-1.png");
-    --news-2: url("/img/news-2.png");
-    --news-3: url("/img/news-3.png");
+    --header-logo: url("/img/header/logo.png");
+    --header-background: url("/img/header/header-background.png");
+    --header--menu-button: url("/img/header/header-menu-button.png");
+    --beige-stripe-1-stripe: url("/img/header/stripe.png");
+    --beige-stripe-1-spotyfy: url("/img/header/spotify.png");
+    --beige-stripe-1-microsoft: url("/img/header/microsoft.png");
+    --beige-stripe-1-dropbox: url("/img/header/dropbox.png");
+    --beige-stripe-1-behance: url("/img/header/behance.png");
+    --block-1-background: url("/img/block-1/block-1-background.png");
+    --block-1-list: url("/img/block-1/arrows.png");
+    --block-2-image-1: url("/img/block-2/block-2-image-1.png");
+    --block-2-image-2: url("/img/block-2/block-2-image-2.png");
+    --article-1: url("/img/article/article-1.png");
+    --article-2: url("/img/article/article-2.png");
+    --article-3: url("/img/article/article-3.png");
+    --article-4: url("/img/article/article-4.png");
+    --team-man: url("/img/community/team-man.png");
+    --team-nigga: url("/img/community/team-nigga.png");
+    --team-woman: url("/img/community/team-woman.png");
+    --team-link-1: url("/img/community/team-link-1.png");
+    --team-link-2: url("/img/community/team-link-2.png");
+    --team-link-3: url("/img/community/team-link-3.png");
+    --patients: url("/img/community/patients.png");
+    --news-1: url("/img/community/news-1.png");
+    --news-2: url("/img/community/news-2.png");
+    --news-3: url("/img/community/news-3.png");
 }
 
 body {
@@ -103,7 +111,7 @@ a {
 .header__spine {
     display: block;
     margin: 10rem 6.5rem 0 2rem;
-    padding: 0 0 0 0;
+    padding: 0;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
 }
@@ -119,14 +127,14 @@ a {
 }
 
 .header__title {
-    font-size: 4.875rem;
+    font-size: 78px;
     font-weight: 700;
     line-height: 5.85rem;
-    margin: 6.4rem 0 0 0;
+    margin-top: 6.4rem;
 }
 
 .header__paragraph {
-    font-size: 1rem;
+    font-size: 16px;
     font-style: italic;
     font-weight: 500;
     line-height: 1.775rem;
@@ -134,12 +142,12 @@ a {
 }
 
 .header__find-button {
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 500;
     background: var(--gray);
     max-width: 11rem;
     box-sizing: border-box;
-    padding: 0.75rem 1.3rem 0.75rem 3rem;
+    padding: .75rem 1.3rem .75rem 3rem;
     margin-top: 4.2rem;
 }
 
@@ -201,7 +209,7 @@ a {
 
 .block-1__list {
     list-style-image: var(--block-1-list);
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
     display: flex;
     flex-direction: column;
@@ -220,7 +228,7 @@ a {
 }
 
 .box-title {
-    font-size: 3rem;
+    font-size: 48px;
     font-weight: 700;
     line-height: 4.2rem;
 }
@@ -239,8 +247,8 @@ a {
     display: inline-flex;
     padding: 1rem 1.875rem;
     align-items: flex-start;
-    gap: 0.625rem;
-    border-radius: 0.3125rem;
+    gap: .625rem;
+    border-radius: .3125rem;
 }
 
 /*GRAY-STRIPE*/
@@ -256,33 +264,33 @@ a {
     max-width: 23.8rem;
     box-sizing: border-box;
     padding-left: 2.6rem;
-    border-left: 0.3rem solid var(--red-orange);
+    border-left: .3rem solid var(--red-orange);
     margin-left: 3.25rem;
 }
 
 .column-name {
     font-family: var(--inter);
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.6rem;
 }
 
 .column-title {
-    font-size: 2.125rem;
+    font-size: 34px;
     font-weight: 700;
     line-height: 3.4rem;
 }
 
 .column-paragraph {
     font-family: var(--inter);
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.6rem;
 }
 
 .column-button {
     font-family: var(--inter);
-    font-size: 0.75rem;
+    font-size: 12px;
     font-weight: 500;
     line-height: 1.2rem;
 }
@@ -301,7 +309,7 @@ a {
     justify-content: right;
     max-width: 23.6875rem;
     max-height: 23.1875rem;
-    margin: 8.75rem 0 0 0;
+    margin-top: 8.75rem;
 }
 
 .block-2_image-1 {
@@ -334,17 +342,17 @@ a {
 
 .beige-stripe__title {
     margin-top: 5.25rem;
-    font-size: 2.5rem;
+    font-size: 40px;
 }
 
 .beige-stripe__paragraph {
     font-family: var(--inter);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.96rem;
 }
 
 .block-2__stripe-link {
-    font-size: 1.5rem;
+    font-size: 24px;
     margin-top: 7.375rem;
 }
 
@@ -382,15 +390,15 @@ a {
 }
 
 .article-category {
-    font-size: 0.875rem;
+    font-size: 14px;
     font-weight: 600;
     line-height: 1.4175rem;
-    letter-spacing: 0.14rem;
+    letter-spacing: .14rem;
     box-sizing: border-box;
 }
 
 .article-title {
-    font-size: 1.625rem;
+    font-size: 26px;
     font-weight: 700;
     line-height: 1.625rem;
     margin-top: 1rem;
@@ -421,12 +429,12 @@ a {
 .community-subtitle {
     font-family: var(--inter);
     font-size: 1rem;
-    margin: 8rem 0 0 0;
+    margin-top: 8rem;
 }
 
 .community-title {
     max-width: 28.4375rem;
-    font-size: 3rem;
+    font-size: 48px;
 }
 
 /*TEAM*/
@@ -466,14 +474,14 @@ a {
 .team-info__text-name {
     font-family: var(--inter);
     color: var(--dark-blue);
-    font-size: 1.25rem;
+    font-size: 20px;
     font-weight: 600;
 }
 
 .team-info__text-job {
     font-family: var(--inter);
     color: var(--transparent-gray);
-    font-size: 0.875rem;
+    font-size: 14px;
 }
 
 .community__team-info {
@@ -520,9 +528,9 @@ a {
 }
 
 .patients-title {
-    font-size: 3rem;
+    font-size: 48px;
     font-weight: 700;
-    margin: 0.75rem 0 3.5rem;
+    margin: .75rem 0 3.5rem;
 }
 
 .patients__block {
@@ -532,7 +540,7 @@ a {
 }
 
 .patients__block-text {
-    font-size: 1.875rem;
+    font-size: 30px;
     font-style: italic;
     font-weight: 500;
     line-height: 2.5rem;
@@ -541,15 +549,15 @@ a {
 
 .patients__block-name {
     font-family: var(--inter);
-    font-size: 1.125rem;
+    font-size: 18px;
     font-weight: 600;
     color: var(--dark-blue);
 }
 
 .patients__block-status {
     font-family: var(--inter);
-    font-size: 0.875rem;
-    letter-spacing: 0.0525rem;
+    font-size: 14px;
+    letter-spacing: .0525rem;
     color: var(--dark-blue);
 }
 
@@ -591,27 +599,27 @@ a {
 }
 
 .news__author {
-    font-size: 0.75rem;
+    font-size: 12px;
     font-weight: bold;
-    line-height: 0.75rem;
+    line-height: .75rem;
 }
 
 .news__column-title {
-    font-size: 1.375rem;
+    font-size: 22px;
     font-weight: 700;
     line-height: 2.125rem;
     text-decoration-line: underline;
 }
 
 .news__column-date {
-    font-size: 0.75rem;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 0.75rem;
+    line-height: .75rem;
 }
 
 .news__column-preview {
     font-family: var(--inter);
-    font-size: 1rem;
+    font-size: 16rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5rem;
@@ -635,8 +643,8 @@ a {
 .footer {
     background: var(--black);
     color: var(--white);
-    border-left: var(--white) 0.1rem solid;
-    border-right: var(--white) 0.1rem solid;
+    border-left: var(--white) .1rem solid;
+    border-right: var(--white) .1rem solid;
 }
 
 .footer__column {
@@ -649,10 +657,10 @@ a {
     color: var(--white);
     font-family: var(--inter);
     list-style: none;
-    font-size: 0.875rem;
+    font-size: 14px;
     font-weight: 400;
     line-height: 2.5rem;
-    opacity: 0.6;
+    opacity: .6;
 }
 
 .footer__links {
