@@ -15,15 +15,15 @@
     --back-color: #711010;
     --dark-blue: #232d5a;
 
-    --header-logo: url("/img/header/logo.png");
-    --header-burger: url("../img/header/burger.svg");
-    --header-burger-2: url("../img/header/billy.png");
-    --block-0-background: url("/img/header/header-background.png");
-    --beige-stripe-1-stripe: url("/img/header/stripe.png");
-    --beige-stripe-1-spotyfy: url("/img/header/spotify.png");
-    --beige-stripe-1-microsoft: url("/img/header/microsoft.png");
-    --beige-stripe-1-dropbox: url("/img/header/dropbox.png");
-    --beige-stripe-1-behance: url("/img/header/behance.png");
+    --block-0-logo: url("/img/block-0/logo.png");
+    --header-burger: url("/img/header/burger.svg");
+    --header-burger-2: url("/img/header/billy.png");
+    --block-0-background: url("/img/block-0/block-0-background.png");
+    --beige-stripe-1-stripe: url("/img/block-0/beige-stripe-1/stripe.png");
+    --beige-stripe-1-spotyfy: url("/img/block-0/beige-stripe-1/spotify.png");
+    --beige-stripe-1-microsoft: url("/img/block-0/beige-stripe-1/microsoft.png");
+    --beige-stripe-1-dropbox: url("/img/block-0/beige-stripe-1/dropbox.png");
+    --beige-stripe-1-behance: url("/img/block-0/beige-stripe-1/behance.png");
     --block-1-background: url("/img/block-1/block-1-background.png");
     --block-1-list: url("/img/block-1/arrows.png");
     --block-2-image-1: url("/img/block-2/block-2-image-1.png");
@@ -173,7 +173,7 @@ li {
     top: 2.7rem;
     min-width: 10rem;
     min-height: 1.8rem;
-    background: var(--header-logo) no-repeat;
+    background: var(--block-0-logo) no-repeat;
     z-index: 1;
 }
 
@@ -312,7 +312,7 @@ li {
     align-items: flex-start;
     gap: .625rem;
     border-radius: .3125rem;
-    transition: border-radius .75s ease;
+    transition-duration: .75s, .25s;
 }
 
 .box-link:hover {
