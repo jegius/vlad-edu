@@ -69,7 +69,7 @@ a {
     color: var(--dark-blue);
 }
 
-h1 {
+h1, h2, h3 {
     margin: 0;
     padding: 0;
 }
@@ -179,11 +179,11 @@ li {
 
 
 .block-0__spine {
+    position: relative;
     display: flex;
     align-self: center;
     gap: 16.5rem;
-    margin-left: 2rem;
-    padding: 0;
+    left: 2rem;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
 }
@@ -497,15 +497,22 @@ li {
     content: var(--article-4);
 }
 
+.community__patients {
+    position: relative;
+    left: 8.5rem;
+}
 
 .community-subtitle {
+    display: flex;
+    flex-direction: column-reverse;
+    min-height: 9rem;
     font-family: var(--inter);
     font-size: 1rem;
-    margin-top: 8rem;
 }
 
 .community-title {
     max-width: 28.4375rem;
+    min-height: 7.78rem;
     font-size: 48px;
 }
 
@@ -516,19 +523,20 @@ li {
 
 .community__team-text {
     display: flex;
-    justify-content: space-between;
-    padding: 0 9.5rem;
+    justify-content: center;
+    gap: 11.2rem;
 }
 
 .team-text-paragraph {
+    display: flex;
+    align-items: center;
     max-width: 31.6875rem;
-    padding-top: 4.5rem;
 }
 
 .community__team-photos {
     display: flex;
-    justify-content: space-between;
-    padding: 0 9.5rem;
+    justify-content: center;
+    gap: 2.6rem;
 }
 
 .team-photos-man {
@@ -558,8 +566,8 @@ li {
 
 .community__team-info {
     display: flex;
-    justify-content: space-between;
-    margin: 0 10.2rem 0 9.5rem;
+    justify-content: center;
+    gap: 3rem;
 }
 
 .community__team-info__person {
@@ -568,9 +576,10 @@ li {
 
 .community__team-info__link {
     display: flex;
-    min-width: 7rem;
-    justify-content: space-between;
-    padding: 2.25rem 0 0 7.1rem;
+    min-width: 14rem;
+    justify-content: flex-end;
+    gap: 1.25rem;
+    align-items: center;
 }
 
 .team-info__link-1 {
@@ -592,12 +601,6 @@ li {
 }
 
 
-.community__patients {
-    display: flex;
-    flex-direction: column;
-    margin-left: 9.5rem;
-}
-
 .patients-title {
     font-size: 48px;
     font-weight: 700;
@@ -605,9 +608,16 @@ li {
 }
 
 .patients__block {
-    background: var(--patients) no-repeat;
-    padding-left: 37.8725rem;
-    min-height: 25.5rem;
+    display: flex;
+    max-height: 25.5rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    align-content: flex-start;
+}
+
+.patients__block::before {
+    content: var(--patients);
 }
 
 .patients__block-text {
@@ -617,6 +627,11 @@ li {
     line-height: 2.5rem;
     max-width: 31.75rem;
 }
+
+/*.patients__block-text::before {*/
+/*    content: var(--patients);*/
+/*    min-height: 25.5rem;*/
+/*}*/
 
 .patients__block-name {
     font-family: var(--inter);
@@ -664,8 +679,8 @@ li {
 
 .news__column {
     display: flex;
-    justify-content: space-between;
-    margin: 0 9.5rem;
+    justify-content: center;
+    gap: 4.69rem;
 }
 
 .news__author {
