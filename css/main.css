@@ -438,10 +438,9 @@ li {
 .block-2__stripe {
     min-height: 18.75rem;
     display: flex;
-    padding: 0 9.25rem;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .beige-stripe__text {
@@ -449,7 +448,6 @@ li {
 }
 
 .beige-stripe__title {
-    margin-top: 5.25rem;
     font-size: 40px;
 }
 
@@ -461,7 +459,6 @@ li {
 
 .block-2__stripe-link {
     font-size: 24px;
-    margin-top: 7.375rem;
 }
 
 
@@ -472,9 +469,8 @@ li {
 .video__description {
     min-height: 34.3rem;
     display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    padding: 4.5rem 12.5rem;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .video__description-text {
@@ -486,7 +482,6 @@ li {
     font-family: var(--inter);
     font-size: 1.25rem;
     line-height: 2.45rem;
-    padding-top: 2rem;
 }
 
 
@@ -515,7 +510,8 @@ li {
     font-size: 26px;
     font-weight: 700;
     line-height: 1.625rem;
-    margin-top: 1rem;
+    position: relative;
+    top: 1rem;
 }
 
 .article-1__link {
@@ -650,13 +646,6 @@ li {
     max-height: 1.5rem;
 }
 
-
-.patients-title {
-    font-size: 48px;
-    font-weight: 700;
-    margin: .75rem 0 3.5rem;
-}
-
 .patients__block {
     display: flex;
     max-height: 25.5rem;
@@ -785,8 +774,9 @@ li {
 
 .footer__column {
     display: flex;
-    justify-content: space-between;
-    padding: 5rem 7rem 6rem 7rem;
+    min-height: 24rem;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .footer__link {
